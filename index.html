@@ -148,7 +148,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--ln);padding:34px 0
 
 <section class="c" id="contact"><div class="w"><div class="sh rv"><div class="k">Reach out</div><h2>Hire an AI SEO Specialist in Pakistan</h2></div>
 <div class="grid g2"><div class="rv"><div class="ci"><i class="fas fa-envelope"></i><div><small>Email</small>saadproseo@gmail.com</div></div><div class="ci"><i class="fas fa-map-marker-alt"></i><div><small>Location</small>Lahore, Pakistan · Serving Dubai, UAE, UK &amp; USA</div></div><div class="ci"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/saad-butt-ai-seo/" target="_blank" rel="noopener"><small>LinkedIn</small>Saad Butt AI SEO Specialist in Pakistan</a></div></div>
-<form class="rv" action="https://formspree.io/f/xwllgbvz" method="POST"><label>Name</label><input class="fi" name="name" required placeholder="Your name"><label>Email</label><input class="fi" type="email" name="email" required placeholder="you@email.com"><label>Message</label><textarea class="fi" name="message" required placeholder="Tell me about your project..."></textarea><br><br><button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button></form></div></div></section>
+<form id="contactForm" class="rv" action="https://formspree.io/f/xwllgbvz" method="POST"><label>Name</label><input class="fi" name="name" required placeholder="Your name"><label>Email</label><input class="fi" type="email" name="email" required placeholder="you@email.com"><label>Message</label><textarea class="fi" name="message" required placeholder="Tell me about your project..."></textarea><br><br><button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button></form></div></div></section>
 
 </main>
 <footer><div class="w"><div class="soc"><a class="ib" href="https://www.linkedin.com/in/saad-butt-ai-seo/" target="_blank" rel="noopener" title="Saad Butt AI SEO Specialist in Pakistan – LinkedIn"><i class="fab fa-linkedin-in"></i></a><a class="ib" href="https://x.com/SaadButtSEO" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a><a class="ib" href="https://www.instagram.com/saxdbutt/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></div>© 2026 Saad Butt – AI SEO Specialist in Pakistan. All rights reserved.</div></footer>
@@ -207,4 +207,25 @@ for(const n of N){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n
  if(near>0){x.strokeStyle=`rgba(${col},${near*.35*k})`;x.beginPath();x.moveTo(n.x,n.y);x.lineTo(m.x,m.y);x.stroke()}
  x.beginPath();x.arc(n.x,n.y,n.r*n.s,0,6.283);x.fillStyle=`rgba(${col},${(.45+near*.4)*k})`;x.fill()}
 requestAnimationFrame(d)})()})();
-</script></body></html>
+</script>
+<script>
+  const form = document.getElementById("contactForm");
+  
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    
+    if (response.ok) {
+      alert("Thank you! Your message has been sent successfully.");
+      form.reset();
+    } else {
+      alert("Oops! There was a problem submitting your form.");
+    }
+  });
+</script>
+</body></html>
