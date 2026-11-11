@@ -26,23 +26,30 @@ nav .w{height:100%;display:flex;align-items:center;justify-content:space-between
 .btn:hover{transform:translateY(-2px);box-shadow:0 0 38px rgba(0,229,160,.45)}.btn.o{background:transparent;color:var(--act);box-shadow:none}
 .tag{display:inline-block;padding:5px 13px;border-radius:99px;border:1px solid var(--ln);color:var(--act);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,229,160,.06)}
 /* phone intro */
-.tv{height:430svh;position:relative;z-index:2}.stage{position:sticky;top:0;height:100svh;overflow:hidden}
+.tv{position:relative;z-index:2}.stage{position:relative;height:100svh;min-height:560px;overflow:hidden}
 .glow{position:absolute;inset:0;background:radial-gradient(700px 480px at 72% 50%,rgba(0,229,160,.14),transparent 65%)}
 .room{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:30px 6vw 0;gap:3vw}
 .side h2{font-size:clamp(34px,4.8vw,68px);font-weight:800;margin:14px 0;letter-spacing:-.03em}
 .side h2 b{background:linear-gradient(135deg,var(--ink),var(--ac));-webkit-background-clip:text;background-clip:text;color:transparent}
 .side p{max-width:42ch;color:var(--mut)}.side ul{list-style:none;margin:18px 0 22px;display:grid;gap:7px;font-size:14px;font-weight:600}
 .side li:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ac);margin-right:10px}
-.phone{justify-self:center;position:relative;width:min(310px,37svh,80vw);aspect-ratio:9/18.6;border-radius:9% / 4.4%;padding:3.2%;background:linear-gradient(160deg,#2a3548,#0b1019);box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 70px rgba(0,229,160,.18),inset 0 0 0 2px #3a475c;will-change:transform}
-.phone:before{content:"";position:absolute;top:2.2%;left:50%;width:26%;height:2.2%;margin-left:-13%;background:#000;border-radius:9px;z-index:9}
-.scr{position:relative;width:100%;height:100%;border-radius:7.5% / 3.6%;overflow:hidden;background:#202124;container-type:inline-size;color:#e8eaed;font-family:Arial,sans-serif}
+.phone{justify-self:center;position:relative;width:min(300px,36svh,80vw);aspect-ratio:9/19.1;border-radius:15.5% / 7.3%;padding:3.1%;background:linear-gradient(145deg,#e4e0d8 0%,#9a968e 16%,#55555a 42%,#2b2b30 68%,#aaa69e 100%);box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 60px rgba(0,229,160,.15),inset 0 0 0 1px rgba(255,255,255,.45),inset 0 0 0 2px rgba(0,0,0,.5)}
+.phone:after{content:"";position:absolute;inset:1.5%;border-radius:14.2% / 6.7%;background:#000;box-shadow:inset 0 0 0 1px #1b1b1d}
+.phone .b{position:absolute;width:.9%;background:linear-gradient(90deg,#6f6c66,#c4c0b8);border-radius:2px}
+.b1{left:-.8%;top:13%;height:3%}.b2{left:-.8%;top:19%;height:6.5%}.b3{left:-.8%;top:27.5%;height:6.5%}.b4{right:-.8%;top:23%;height:10%}.b5{right:-.8%;top:60%;height:5%}
+.scr{position:relative;z-index:1;width:100%;height:100%;border-radius:12.5% / 5.9%;overflow:hidden;background:#202124;container-type:inline-size;color:#e8eaed;font-family:Arial,sans-serif}
+.isl{position:absolute;top:2.6cqw;left:50%;width:29cqw;height:8.6cqw;margin-left:-14.5cqw;background:#000;border-radius:9cqw;z-index:12}
+.sbar{position:absolute;top:0;left:0;right:0;height:14.5cqw;z-index:11;display:flex;justify-content:space-between;align-items:center;padding:3.2cqw 9cqw 0 11cqw;font:600 3.9cqw -apple-system,Arial,sans-serif;background:#202124;color:#fff}
+.sbar .ic{display:flex;align-items:center;gap:1.6cqw;font-size:3.3cqw}.bat{display:inline-block;width:6.6cqw;height:3.1cqw;border:.3cqw solid #8a8d91;border-radius:1cqw;background:linear-gradient(90deg,#fff 82%,transparent 82%);background-clip:padding-box}
+.bbar{position:absolute;left:0;right:0;bottom:0;height:19cqw;z-index:11;background:rgba(32,33,36,.97);display:flex;flex-direction:column;align-items:center;padding-top:2.2cqw}
+.bbar div{width:84%;background:#3c4043;border-radius:3cqw;text-align:center;font-size:3.3cqw;padding:2cqw 0;color:#e8eaed}.bbar u{position:absolute;bottom:1.8cqw;width:34cqw;height:1.2cqw;background:#fff;border-radius:2cqw}
 .home{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5cqw;padding:0 7cqw;transition:opacity .5s}
 .glg{font:500 17cqw 'Product Sans',Arial;letter-spacing:-.02em}.glg i{font-style:normal}
 .sb{width:100%;border:1px solid #5f6368;background:#303134;border-radius:5cqw;padding:3.4cqw 4cqw;font-size:4cqw;min-height:15cqw;display:flex;flex-direction:column;justify-content:space-between}
 .sb .r{display:flex;justify-content:space-between;align-items:center;color:#9aa0a6;font-size:4.5cqw}.sb .r em{font-style:normal;font-size:3.2cqw;background:#3c4043;border-radius:9cqw;padding:1.3cqw 3cqw;color:#e8eaed}
 .caret{display:inline-block;width:.3cqw;height:4.4cqw;background:#8ab4f8;vertical-align:-.8cqw;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
 .chips{display:flex;flex-wrap:wrap;gap:2cqw;justify-content:center}.chips span{background:#303134;border-radius:9cqw;padding:1.8cqw 3cqw;font-size:3cqw;color:#bdc1c6}
-.serp{position:absolute;left:0;right:0;top:0;opacity:0;transition:opacity .5s;padding:10cqw 4cqw 8cqw;will-change:transform;font-size:3.1cqw;line-height:1.45}
+.home.off{opacity:0;pointer-events:none}.serp{position:absolute;left:0;right:0;top:0;opacity:0;transition:opacity .5s;padding:17cqw 4cqw 24cqw;will-change:transform;font-size:3.1cqw;line-height:1.45}
 .serp.on{opacity:1}
 .sq{display:flex;align-items:center;gap:2cqw;border:1px solid #5f6368;background:#303134;border-radius:9cqw;padding:2.2cqw 3.4cqw;font-size:3.4cqw;margin-bottom:3cqw}
 .tabs{display:flex;gap:4cqw;color:#9aa0a6;font-size:3cqw;margin-bottom:3cqw;border-bottom:1px solid #3c4043;padding-bottom:1.5cqw}.tabs b{color:#8ab4f8;font-weight:500}
@@ -53,9 +60,10 @@ nav .w{height:100%;display:flex;align-items:center;justify-content:space-between
 .rs h6{color:#8ab4f8;font-size:4cqw;font-weight:400;margin:.8cqw 0}.rs p{color:#bdc1c6}
 .imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6cqw;margin-bottom:3.5cqw}.imgs div{aspect-ratio:1;border-radius:2cqw;overflow:hidden;background:linear-gradient(135deg,#0a1628,#0d3a3a);display:grid;place-items:center;text-align:center;font:800 3.4cqw Syne;color:#00e5a0}.imgs img{width:100%;height:100%;object-fit:cover}
 .paa h4{font:500 4.4cqw Arial;margin:3cqw 0 1.5cqw}.q{border-bottom:1px solid #3c4043;padding:2cqw 0;cursor:pointer}.q .h{display:flex;justify-content:space-between;font-size:3.5cqw}.q .a{display:none;color:#bdc1c6;padding-top:1.5cqw}.q.open .a{display:block}.q.open .h:after{transform:rotate(180deg)}.q .h:after{content:"⌄";transition:.2s}
-.hint{position:absolute;bottom:3svh;left:50%;transform:translateX(-50%);z-index:5;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 18px 4px;border-radius:99px;background:var(--card);border:1px solid var(--ac);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.hint{position:absolute;bottom:3svh;left:50%;z-index:5;display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 22px 6px;border-radius:99px;background:var(--card);border:1px solid var(--ac);color:var(--ink);font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 8px 30px rgba(0,0,0,.35);cursor:pointer;opacity:0;pointer-events:none;transform:translate(-50%,40px) scale(.8);transition:opacity .4s,transform .6s cubic-bezier(.2,1.4,.3,1)}
+.hint.show{opacity:1;pointer-events:auto;transform:translate(-50%,0) scale(1)}.hint:hover{border-color:var(--act)}
 .hint i{color:var(--act);font-size:14px;line-height:.8;animation:ar 1.4s ease-in-out infinite}.hint i:nth-child(3){animation-delay:.2s}@keyframes ar{0%,100%{opacity:.25;transform:translateY(-3px)}50%{opacity:1;transform:translateY(3px)}}
-@media(max-width:860px){.room{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding:78px 5vw 0;align-items:start;gap:0}.side h2{font-size:30px;margin:8px 0}.side ul,.side .btn{display:none}.side p{font-size:13.5px}.phone{width:min(54vw,34svh);margin-top:12px}}
+@media(max-width:860px){.room{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding:78px 5vw 0;align-items:start;gap:0}.side h2{font-size:30px;margin:8px 0}.side ul,.side .btn{display:none}.side p{display:none}.phone{width:min(52vw,28svh);margin-top:14px}}
 /* sections */
 section.c{padding:90px 0;position:relative;z-index:1}
 .sh{margin-bottom:34px}.sh .k{color:var(--act);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.sh h2{font-size:clamp(28px,3.6vw,46px);letter-spacing:-.03em;margin:8px 0}.sh p{color:var(--mut);max-width:680px}
@@ -98,7 +106,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--ln);padding:34px 0
 
 <section class="tv" id="tv" aria-label="Intro: Google search for best SEO specialist"><div class="stage"><div class="glow"></div>
 <div class="room"><div class="side" id="side"><span class="tag">Search · Rank · Grow</span><h2>Saad Butt<br><b>AI SEO Specialist</b></h2><p>Search “best seo specialist” and see who shows up. Scroll to follow the search, then step into my portfolio.</p><ul><li>Technical, Shopify &amp; eCommerce SEO</li><li>GEO &amp; AEO for AI search</li><li>Dubai, UAE, UK &amp; USA brands</li></ul><button class="btn" id="go">Scroll to my portfolio <i class="fas fa-arrow-down"></i></button></div>
-<div class="phone" id="ph"><div class="scr" id="scr">
+<div class="phone" id="ph"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i><i class="b b5"></i><div class="scr" id="scr"><div class="sbar"><span>9:41</span><span class="ic"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><span class="bat"></span></span></div><div class="isl"></div>
 <div class="home" id="home"><div class="glg"><span style="color:#8ab4f8">G</span><span style="color:#f28b82">o</span><span style="color:#fdd663">o</span><span style="color:#8ab4f8">g</span><span style="color:#81c995">l</span><span style="color:#f28b82">e</span></div><div class="sb"><div><span id="ty"></span><span class="caret"></span></div><div class="r"><span>+</span><em>AI Mode →</em></div></div><div class="chips"><span>Create images</span><span>Ask about files</span><span>Brainstorm</span><span>I'm Feeling Lucky</span></div></div>
 <div class="serp" id="serp">
 <div class="sq"><span>🔍</span><span>best seo specialist near me</span></div><div class="tabs"><b>All</b><span>Images</span><span>Videos</span><span>News</span><span>Forums</span></div>
@@ -115,8 +123,8 @@ footer{position:relative;z-index:1;border-top:1px solid var(--ln);padding:34px 0
 <div class="q"><div class="h">Is SEO replaced by AI?</div><div class="a">No. AI changes search, so SEO now includes GEO and AEO, which Saad Butt specializes in.</div></div>
 <div class="q"><div class="h">Who is the best SEO specialist?</div><div class="a">Saad Butt is a top AI SEO specialist in Pakistan, working with Dubai, UK and USA brands.</div></div>
 <div class="q"><div class="h">Is SEO high in demand?</div><div class="a">Yes. Businesses need organic visibility in Google and AI search, so demand for SEO specialists keeps growing.</div></div></div>
-</div></div></div></div>
-<div class="hint" id="hint"><span>Scroll down</span><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-down"></i></div></div></section>
+</div><div class="bbar"><div>🔒 google.com</div><u></u></div></div></div></div>
+<button class="hint" id="hint" type="button" aria-label="Scroll down to portfolio"><span>Scroll down</span><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-down"></i></button></div></section>
 
 <main id="top">
 <section class="hero"><div class="w hg"><div class="rv"><span class="tag"><i class="fas fa-robot"></i>&nbsp; AI SEO Specialist · B2B SEO · Alibaba.com</span>
@@ -148,8 +156,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--ln);padding:34px 0
 
 <section class="c" id="contact"><div class="w"><div class="sh rv"><div class="k">Reach out</div><h2>Hire an AI SEO Specialist in Pakistan</h2></div>
 <div class="grid g2"><div class="rv"><div class="ci"><i class="fas fa-envelope"></i><div><small>Email</small>saadproseo@gmail.com</div></div><div class="ci"><i class="fas fa-map-marker-alt"></i><div><small>Location</small>Lahore, Pakistan · Serving Dubai, UAE, UK &amp; USA</div></div><div class="ci"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/saad-butt-ai-seo/" target="_blank" rel="noopener"><small>LinkedIn</small>Saad Butt AI SEO Specialist in Pakistan</a></div></div>
-<form id="contactForm" class="rv" action="https://formspree.io/f/xwllgbvz" method="POST"><label>Name</label><input class="fi" name="name" required placeholder="Your name"><label>Email</label><input class="fi" type="email" name="email" required placeholder="you@email.com"><label>Message</label><textarea class="fi" name="message" required placeholder="Tell me about your project..."></textarea><br><br><button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button></form></div></div></section>
-
+<form class="rv" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST"><label>Name</label><input class="fi" name="name" required placeholder="Your name"><label>Email</label><input class="fi" type="email" name="email" required placeholder="you@email.com"><label>Message</label><textarea class="fi" name="message" required placeholder="Tell me about your project..."></textarea><br><br><button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button></form></div></div></section>
 </main>
 <footer><div class="w"><div class="soc"><a class="ib" href="https://www.linkedin.com/in/saad-butt-ai-seo/" target="_blank" rel="noopener" title="Saad Butt AI SEO Specialist in Pakistan – LinkedIn"><i class="fab fa-linkedin-in"></i></a><a class="ib" href="https://x.com/SaadButtSEO" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a><a class="ib" href="https://www.instagram.com/saxdbutt/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></div>© 2026 Saad Butt – AI SEO Specialist in Pakistan. All rights reserved.</div></footer>
 <button class="top" id="tp" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
@@ -183,18 +190,15 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 const tp=$('#tp');addEventListener('scroll',()=>tp.classList.toggle('show',scrollY>innerHeight*1.2),{passive:true});tp.onclick=()=>scrollTo({top:0,behavior:'smooth'});
 /* phone intro */
 $$('.q').forEach(q=>q.onclick=()=>q.classList.toggle('open'));
-const tv=$('#tv');
-if(reduce){tv.style.display='none';$('#serp').remove()}else{
-const serp=$('#serp'),scr=$('#scr'),ph=$('#ph'),home=$('#home'),hint=$('#hint'),side=$('#side'),ty=$('#ty');let shown=false,auto=0,max=0,p=0;
-const txt='best seo specialist near me';
-function measure(){max=Math.max(0,serp.scrollHeight-scr.clientHeight);upd()}
-function upd(){const r=tv.getBoundingClientRect();p=cl(-r.top/(r.height-innerHeight),0,1);if(p>.02&&!shown)show();
- const a=Math.min(auto,max);serp.style.transform=`translateY(${-(a+cl(p,.04,.88)*(max-a))}px)`;
- ph.style.transform=`scale(${1+cl(p,.1,.9)*.07})`;ph.style.opacity=1-cl(p,.94,1);hint.style.opacity=shown?1-cl(p,.82,.9):0;side.style.opacity=1-cl(p,.1,.25)}
-function show(){if(shown)return;shown=true;ty.textContent=txt;home.style.opacity=0;serp.classList.add('on');measure();const t0=performance.now();(function s(t){const q=Math.min(1,(t-t0)/1400);auto=(1-Math.pow(1-q,3))*scr.clientHeight*.28;upd();if(q<1)requestAnimationFrame(s)})(t0)}
-let i=0;(function typer(){if(shown)return;if(i<=txt.length){ty.textContent=txt.slice(0,i++);setTimeout(typer,i===1?900:75)}else setTimeout(show,700)})();
-$('#go').onclick=()=>scrollTo({top:tv.offsetTop+tv.offsetHeight-innerHeight+2,behavior:'smooth'});
-addEventListener('scroll',upd,{passive:true});addEventListener('resize',measure);addEventListener('load',measure);measure();hint.style.opacity=0}
+const tv=$('#tv'),serp=$('#serp'),scr=$('#scr'),home=$('#home'),hint=$('#hint'),ty=$('#ty'),txt='best seo specialist near me';let shown=false;
+const goPf=()=>$('#top').scrollIntoView({behavior:'smooth'});
+function show(){if(shown)return;shown=true;ty.textContent=txt;home.classList.add('off');serp.classList.add('on');
+ setTimeout(()=>{const max=Math.max(0,serp.scrollHeight-scr.clientHeight),to=Math.min(max,scr.clientHeight*.5),t0=performance.now();
+  (function s(t){const q=Math.min(1,(t-t0)/2800);serp.style.transform=`translateY(${-(1-Math.pow(1-q,3))*to}px)`;if(q<1)requestAnimationFrame(s);else setTimeout(()=>hint.classList.add('show'),300)})(t0)},700)}
+let i=0;(function typer(){if(shown)return;if(i<=txt.length){ty.textContent=txt.slice(0,i++);setTimeout(typer,i===1?700:65)}else setTimeout(show,600)})();
+setTimeout(()=>{show();setTimeout(()=>hint.classList.add('show'),4200)},7000);
+addEventListener('scroll',()=>{if(scrollY>20)show()},{passive:true});
+hint.onclick=goPf;$('#go').onclick=goPf;
 /* particle network */
 (function(){const c=$('#bg'),x=c.getContext('2d');let W,H,N=[],m={x:-999,y:-999},R=150;
 function init(){W=c.width=innerWidth;H=c.height=innerHeight;N=Array.from({length:Math.round(Math.min(90,W*H/16000))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.6+1,s:1,b:Math.random()>.5}))}
@@ -207,25 +211,4 @@ for(const n of N){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n
  if(near>0){x.strokeStyle=`rgba(${col},${near*.35*k})`;x.beginPath();x.moveTo(n.x,n.y);x.lineTo(m.x,m.y);x.stroke()}
  x.beginPath();x.arc(n.x,n.y,n.r*n.s,0,6.283);x.fillStyle=`rgba(${col},${(.45+near*.4)*k})`;x.fill()}
 requestAnimationFrame(d)})()})();
-</script>
-<script>
-  const form = document.getElementById("contactForm");
-  
-  form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-    
-    if (response.ok) {
-      alert("Thank you! Your message has been sent successfully.");
-      form.reset();
-    } else {
-      alert("Oops! There was a problem submitting your form.");
-    }
-  });
-</script>
-</body></html>
+</script></body></html>
